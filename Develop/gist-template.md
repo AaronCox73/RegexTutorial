@@ -1,10 +1,15 @@
-# Title (replace with your title)
+# Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+Regular Expression, or Regex for short, is simply a way of seaching for data. Using a sequence of characters that specifies a search pattern. 
+For example: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/  
+
+This will search for any pattern that matches what these chararcters have specified. Hard to believe but this sequence is searching for any email that is possible. Let's break it down
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In this tutorial we are going to cover what goes into a Regular expression and what makes them work. Specifically, we are going to go through and see how this sequence of code (below) functions at all. 
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ 
 
 ## Table of Contents
 
@@ -23,6 +28,8 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+When writing a Regular Expression one needs to first allow the computer to know that we are starting a regex. This is where Anchors come in. Anchors do not match to a character but match a position before or after the characters. 
+
 
 ### Quantifiers
 
