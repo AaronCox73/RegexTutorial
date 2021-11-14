@@ -76,11 +76,22 @@ Another greedy Quantifier used in this regex is ```{}``` when matching ```{2,6}`
 
 
 ### Boundaries
+Boundary Matchers make matches more precise by specifying certain information. With boundaries you can search for characters at the beginning of a line, end of a line, word boundary, non-word boundary, and more. 
 
 ### Back-references
+Back References are regular expressions commands which refer to a previous part of the matched regex. They are specified with a blackslash ```\``` 
+
+for example, in our code ```a-z0-9_\``` is looking for the exact same text again.
 
 ### Look-ahead and Look-behind
+Look ahead and Look behing allow us to find matches that are followed or preceded by another pattern. 
+Look ahead syntax is ```X(?=Y)``` this is saying look for X but only match if followed by Y
+Look behing has both a postivie look behind and a negative look behind. This dictates in which way the secondary value is in relation to the first.
+Positive lookbehind: ```(?<=Y)X```, matches X, but only if there’s Y before it.
+Negative lookbehind: ```(?<!Y)X```, matches X, but only if there’s no Y before it.
+
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+ GitHub: <a href = 'https://github.com/AaronCox73'> AaronCox73 </a>
+  Email: <a href = 'mailto:Aaronjeffersoncox@gmail.com'> Aaronjeffersoncox@gmail.com </a>
